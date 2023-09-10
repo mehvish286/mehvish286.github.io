@@ -1,0 +1,73 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply general styles for all views */
+body {
+    font-family: Arial, sans-serif; /* Optional: Set a font-family */
+}
+
+header {
+    color: rgb(95, 64, 142); /* Set text color for header */
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    box-sizing: border-box;
+    border: 1px;
+    border-style: solid;
+    border-color: #000; /* 1px black border for sections */
+    padding: 20px; /* Spacing inside sections */
+    margin: 10px; /* Spacing between sections */
+    float: left; /* Float sections for desktop view */
+    width: calc(33.33% - 20px); /* Equal width for desktop sections */
+    position: relative; /* Position for section title */
+    background-color: rgba(161, 127, 203, 0.626);
+}
+
+section p{
+    margin-top:10px;
+}
+
+.section-title {
+    background-color: #ec9aed; /* Unique background color for section title */
+    border: 1px;
+    border-style: solid;
+    border-color: #000;
+    color: white; /* Text color for section title */
+    padding: 5px 10px;
+    position: absolute; /* Position section title */
+    top: 0;
+    right: 0;
+}
+/* @media(min-width:992px) {
+    section{
+        width:31%;
+    }
+} */
+@media (min-width:768px) and (max-width:992px) {
+    .desktop{
+        width:47%;
+    }
+    .tablet{
+        width:96%;
+        clear:left;
+    }
+}
+@media (max-width:767px) {
+    .desktop{
+        width:96%;
+    }
+    .tablet{
+        width:96%;
+    }
+}
+
+
+
+
+
+    
